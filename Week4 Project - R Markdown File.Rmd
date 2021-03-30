@@ -62,8 +62,8 @@ UrlTest  <- "http://d396qusza40orc.cloudfront.net/predmachlearn/pml-testing.csv"
 current_path <- rstudioapi::getSourceEditorContext()$path
 setwd(dirname(current_path))
 
-dt_training<-read.csv("pml-training.csv", na.strings = c("NA", "#DIV/0!", ""))
-dt_testing<-read.csv("pml-testing.csv", na.strings = c("NA", "#DIV/0!", ""))
+dt_training<-read.csv("./data/pml-training.csv", na.strings = c("NA", "#DIV/0!", ""))
+dt_testing<-read.csv("./data/pml-testing.csv", na.strings = c("NA", "#DIV/0!", ""))
 
 
 dim(dt_training)
